@@ -19,12 +19,20 @@ $ service mongodb start
 $ mongo [-u username -p password]
 ```
 
-## 기본 명령어
+## DataBase
+### 기본 명령어
 - db : 현재 연결된 데이터베이스 확인
 - show dbs : 데이터베이스 목록 확인
 - show collections : 현재 연결된 데이터베이스에 존재하는 컬렉션 목록 확인
+- use db_name : 데이터베이스를 세팅. 컬렉션이 없는 상태라면 실제 생성은 하지 않는다.
+- db.dropDatabase() : 현재 데이터베이스를 삭제. 이 작업중에는 글로벌 쓰기 Lock이 걸린다.
 
-## 예약된 데이터베이스
+<b>데이터베이스 상태 조회</b>
+- db.getCollectionInfos() : 현재 데이터베이스의 컬렉션들의 정보를 리스트로 반환. 이름과 타입, UUID 정보를 얻는다.
+- db.serverStatus() : 호스트, 프로세스id, Lock 옵션, 스토리지 엔진 이름, 스토리지 엔진 통계와 같은 정보를 제공
+- db.stats() : 데이터베이스 내의 컬렉션, 뷰, 오브젝트의 개수와 크기에 대한 통계를 제공
+
+### 예약된 데이터베이스
 - admin : 인증(authentication)과 권한 부여(authorization) 역할
 - local : 단일 서버에 대한 데이터 저장
 - config : 샤딩(sharding)된 몽고DB 클러스터는 config 데이터베이스를 사용해 각 샤드(shard)의 정보를 저장
