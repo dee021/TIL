@@ -59,12 +59,27 @@ db.products.insertMany( [
 ```
 
 ## Document 읽기
-find, findOne 명령으로 도큐먼트를 확인
+findOne / find : 컬렉션에서 하나 혹은 다수의 도큐먼트를 조회한다.
 - .pretty()를 붙여 데이터를 보기 좋은 형태로 확인할 수 있음.
 
-<b>findOne</b> : 하나의 도큐먼트를 확인
+형식
+```
+db.collection_name.findOne(
+    <query>,
+    <projection>,
+    <options>
+)
 
-<b>find</b> : 다수의 도큐먼트를 확인
+db.collection_name.find(
+    <query>,
+    <projection>,
+    <options>
+)
+```
+- query: 조회할 도큐먼트를 필터링
+- projection: 반환할 필드를 지정
+
+파라미터를 지정하지 않으면 전체 도큐먼트를 반환
 
 예시
 ```
