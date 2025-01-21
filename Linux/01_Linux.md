@@ -251,18 +251,18 @@ MIT(Massachusetts Institue of Technology) 라이선스
 - 빅데이터
 - 사물인터넷
 #### 리눅스 클러스터링(Clustering)
-1. 고계산용 클러스터(HPC)
+1. 고계산용 클러스터(HPC; High Performance Computing Cluster)
    
 ![HPC](https://github.com/dee021/TIL/blob/main/Linux/img/HPC.jpg)
    - 고성능의 계산 능력을 제공하기 위한 목적
    - 슈퍼컴퓨터 구성에 주로 사용
-2. 부하분산 클러스터(LVS)
+2. 부하분산 클러스터(LVS; Linux Virtual Server Cluster)
 
 ![LVS](https://github.com/dee021/TIL/blob/main/Linux/img/LVS.jpg)
    - 대규모의 서비스를 제공하기 위한 목적
    - 웹 서버를 비롯한 서버 분야에서 주로 사용
    - 보통 여러 대의 리얼 서버에 부하를 분산해주는 로드 밸런서를 두고 운영하는 방법
-3. 고가용성 클러스터(HA)
+3. 고가용성 클러스터(HA; High Availability Cluster)
 
 ![HA](https://github.com/dee021/TIL/blob/main/Linux/img/HA.jpg)
    - 지속적인 서비스 제공을 목적
