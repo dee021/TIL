@@ -1,7 +1,8 @@
 # TIL - Today I Learned
 
 Linux
-- [운영체제와 리눅스](https://github.com/dee021/TIL/blob/main/Linux/01_Linux.md)
+- [운영체제와 리눅스](https://github.com/dee021/TIL/blob/main/Linux/OS_and_Linux.md)
+- [리눅스와 하드웨어](https://github.com/dee021/TIL/blob/main/Linux/Linux_and_Hardware.md)
 
 MongoDB
 - [MongoDB 시작하기](https://github.com/dee021/TIL/blob/main/MongoDB/01_Start_to_Mongo.md)
