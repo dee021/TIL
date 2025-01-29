@@ -7,6 +7,7 @@ Linux
 - [ext, XFS](https://github.com/dee021/TIL/blob/main/Linux/FileSystem.md)
 - [X 윈도](https://github.com/dee021/TIL/blob/main/Linux/XWindow.md)
 - [Shell](https://github.com/dee021/TIL/blob/main/Linux/Shell.md)
+- [프로세스](https://github.com/dee021/TIL/blob/main/Linux/Process.md)
 
 MongoDB
 - [MongoDB 시작하기](https://github.com/dee021/TIL/blob/main/MongoDB/01_Start_to_Mongo.md)
