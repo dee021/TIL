@@ -9,6 +9,7 @@ Linux
 - [Shell](https://github.com/dee021/TIL/blob/main/Linux/Shell.md)
 - [프로세스](https://github.com/dee021/TIL/blob/main/Linux/Process.md)
 - [네트워크](https://github.com/dee021/TIL/blob/main/Linux/network.md)
+- [사용자 관리](https://github.com/dee021/TIL/blob/main/Linux/user.md)
 
 MongoDB
 - [MongoDB 시작하기](https://github.com/dee021/TIL/blob/main/MongoDB/01_Start_to_Mongo.md)
