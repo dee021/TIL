@@ -19,23 +19,23 @@ RAID에서 사용하는 기술
 ### RAID의 종류
 1) RAID-0
 
-![RAID0](https://github.com/dee021/TIL/blob/main/Linux/img/RAID0.jpg)
+![RAID0](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID0.jpg)
 - 스트라이핑 기술을 사용하여 빠른 입출력 속도를 제공
 - 구성된 디스크 중 오류가 발생하면 데이터 복구가 불가능
 2) RAID-1
 
-![RAID1](https://github.com/dee021/TIL/blob/main/Linux/img/RAID1.jpg)
+![RAID1](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID1.jpg)
 - 미러링 기술을 사용하여 두 개의 디스크에 데이터를 동일하게 기록
 - 읽기 성능은 향상되나 쓰기 성능은 단일 디스크와 같음
 - 중복 저장으로 인한 디스크 낭비가 50%
 3) RAID-2
 
-![RAID2](https://github.com/dee021/TIL/blob/main/Linux/img/RAID2.jpg)
+![RAID2](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID2.jpg)
 - 디스크들은 스트라이핑 기술을 사용하여 구성
 - 디스크들의 에러를 감지하고 수정하기 위해 ECC(Error Check & Correction) 정보를 사용
 4) RAID-3
 
-![RAID3](https://github.com/dee021/TIL/blob/main/Linux/img/RAID3.jpg)
+![RAID3](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID3.jpg)
 - 스트라이핑 기술을 사용하며 디스크를 구성
 - 패러티 정보를 저장하기 위해 별도로 하나의 디스크를 사용
 - 입출력 작업이 동시에 모든 디스크에 대해 이루어지므로 입출력을 겹치게 할 수 없다
@@ -47,7 +47,7 @@ RAID에서 사용하는 기술
 - 입출력의 중첩이 불가능하고 시스템에 병목현상이 발생 할 수 있음
 6) RAID-5
 
-![RAID5](https://github.com/dee021/TIL/blob/main/Linux/img/RAID5.jpg)
+![RAID5](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID5.jpg)
 - 패리티 정보를 이용하여 하나의 디스크가 고장이 발생할 경우에도 사용이 가능한 구성 방식
 - 최소 3개의 디스크로 구성
 - 패리티 정보는 별도의 디스크를 사용하지 않고 구성된 디스크에 분산하여 저장
@@ -55,19 +55,19 @@ RAID에서 사용하는 기술
 - 쓰기 작업이 많지 않은 다중 사용자 시스템에 적합
 7) RAID-6
 
-![RAID6](https://github.com/dee021/TIL/blob/main/Linux/img/RAID6.jpg)
+![RAID6](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID6.jpg)
 - 2차 패리티 구성 : 2개의 디스크 오류에도 데이터를 읽을 수 있음
 - 최소 4개의 디스크로 구성
 - 패리티 공간 = 2/n
 - 처리 속도는 떨어지나 데이터에 대한 신뢰도 향상
 8) RAID 0+1
 
-![RAID01](https://github.com/dee021/TIL/blob/main/Linux/img/RAID01.jpg)
+![RAID01](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID01.jpg)
 - 디스크 n/2개를 RAID-0의 스트라이핑 기술로 구성하고, 그것을 RAID-1의 미러링 기술로 구성
 - 최소 4개의 디스크 필요
 9) RAID-10
 
-![RAID10](https://github.com/dee021/TIL/blob/main/Linux/img/RAID10.jpg)
+![RAID10](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/RAID10.jpg)
 - 디스크 2개를 RAID-1의 미러링 기술로 구성하고, 그것을 스트라이핑하는 방식
 
 10) RAID-53
