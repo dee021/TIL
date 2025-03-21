@@ -324,7 +324,7 @@ OSI 계층과 관련 프로토콜
 - 응용 프로그램을 구분하기 위해 포트 번호를 추가로 사용
 - 리눅스 및 유닉스에서는 '/etc/protocols' 파일에서 프로토콜 번호를 확인할 수 있음
 
- ![protocols](https://github.com/dee021/TIL/blob/main/Linux/img/protocols.png)
+ ![protocols](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/protocols.png)
 
 
 #### Port Number
@@ -483,7 +483,7 @@ enp0s1에 IP 주소는 192.168.0.2, netmask는 255.255.255.0, broadcast는 192.1
 
 ```
 
-![ifconfig](https://github.com/dee021/TIL/blob/main/Linux/img/ifconfig.png)
+![ifconfig](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/ifconfig.png)
 
 ifconfig의 주요 항목
 <table>
@@ -510,7 +510,7 @@ ifconfig의 주요 항목
 ```
 route [add|del] [-destination] [netmask 값] [gw 값] [dev 인터페이스]
 ```
-![route](https://github.com/dee021/TIL/blob/main/Linux/img/route.png)
+![route](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/route.png)
 
 route 주요 항목
 <table>
@@ -680,6 +680,6 @@ nslookup [option] Hostname_or_IPAddress
 <tr><td>-type='서버타입'</td><td>mx(메일 서버), ns(네임 서버) 등 조회 가능</td></tr>
 </table>
 
-![nslookup](https://github.com/dee021/TIL/blob/main/Linux/img/nslookup.png)
+![nslookup](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/nslookup.png)
 
 > `nslookup` 명령만 입력하면 대화형 모드로 접속
