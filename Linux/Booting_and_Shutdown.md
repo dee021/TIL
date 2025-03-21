@@ -16,7 +16,7 @@
   - 셸 스크립트 형태
 - 환경 설정 파일 수정 후 grub2-mkconfig 명령 실행
 
-![grub_file](https://github.com/dee021/TIL/blob/main/Linux/img/grub.png)
+![grub_file](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/grub.png)
 - GRUB_TIMEOUT=5 : GRUB 부트 화면에서 대기하는 시간(s)
 - GRUB_DEFAULT=saved : 부팅할 모드를 선택하는 항목
   - 0 ~ N : 부트 화면에 제시된 목록 중 i+1번째 항목으로 부팅 
@@ -81,7 +81,7 @@ systemctl status '서비스명' // 서비스 관련 상태 확인
 </table>
 
 /lib/systemd/system에서 확인 가능<br>
-![runlevel](https://github.com/dee021/TIL/blob/main/Linux/img/runlevel.png)
+![runlevel](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/runlevel.png)
 
 <B>관련 명령어</B>
 1. systemctl
