@@ -53,7 +53,7 @@ systemctl get_defualt
 systemctl set_default TARGET_NAME
 ```
 
-![bootingMode](https://github.com/dee021/TIL/blob/main/Linux/img/bootingMode.png)
+![bootingMode](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/bootingMode.png)
 
 > 부팅 모드가 multi-user.target으로 설정된 상태에서 X 윈도를 실행시키려면 
 > 사용자 계정으로 로그인 후 'startx' 명령을 실행한다.
