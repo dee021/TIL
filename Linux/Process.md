@@ -29,7 +29,7 @@ exec
 
 - 프로그라운드 프로세스 실행 명령 뒤에 '&'를 붙이면 백그라운드 프로세스로 실행됨
 
-![backgroundProcess](https://github.com/dee021/TIL/blob/main/Linux/img/bgps.png)
+![backgroundProcess](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/bgps.png)
 > [1]은 작업 번호(Job Number), 3497은 PID를 의미
 
 포어그라운드 -> 백그라운드 전환
@@ -78,7 +78,7 @@ exec
 
 <b>ntsysv</b> : 텍스트 환경에서 커서를 이용하여 부팅 중 자동으로 실행되는 서비스를 설정하는 유틸리티
 
-![ntsysv](https://github.com/dee021/TIL/blob/main/Linux/img/ntsysv.png)
+![ntsysv](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/ntsysv.png)
 
 ```
 ntsysv [option]
