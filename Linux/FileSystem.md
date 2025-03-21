@@ -37,13 +37,13 @@ File System : 운영체제가 파티션이나 디스크에 데이터를 저장�
 
 일반적으로 디스크 드라이브 이용 시 파티션을 분할하고 포맷을 통해 파일 시스템을 생성
 
-![mkfs](https://github.com/dee021/TIL/blob/main/Linux/img/mkfs.jpg)
+![mkfs](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/mkfs.jpg)
 
 저장되는 정보는 Directory Blocks and Data Blocks 영역에 저장됨
 - 디렉터리 블록에는 아이노드 번호와 파일명이 저장됨
 - 데이터 블록에는 파일이 보관해야할 정보를 저장됨
 
-![dataBlocks](https://github.com/dee021/TIL/blob/main/Linux/img/datablocks.jpg)
+![dataBlocks](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/datablocks.jpg)
 
 > <b>아이노드(Inode)</b>
 > 전통적인 유닉스 계열 시스템에서 사용하는 일종의 자료 구조<br>
@@ -53,7 +53,7 @@ File System : 운영체제가 파티션이나 디스크에 데이터를 저장�
 
 <b>etx2 파일 시스템</b>
 
-![ext2](https://github.com/dee021/TIL/blob/main/Linux/img/ext2.jpg)
+![ext2](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/ext2.jpg)
 - 슈퍼 블록(Super Block) : 파일 시스템에 대한 전체적인 정보를 담고 있음.
   - 매직 넘버(Magic Number) : 특정 파일 시스템임을 알리는 정보. ext 파일 시스템인 경우 0xEF53
   - 마운트 정보, 전체 아이노드 수 및 남은 수, 전체 블록 수 및 남은 수, 블록 그룹 번호, 블록 크기, 그룹 당 블록 수
