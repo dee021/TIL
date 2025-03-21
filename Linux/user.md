@@ -49,7 +49,7 @@ useradd [option] 사용자계정이름
 </table>
 
 
-![userDefault](https://github.com/dee021/TIL/blob/main/Linux/img/useraddDefault.png)
+![userDefault](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/useraddDefault.png)
 
 
 ```
@@ -157,7 +157,7 @@ passwd [option] 사용자계정
 <tr><td>-e</td><td>다음 로그인 시 반드시 패스워드를 변경하도록 할 때 사용<br>/etc/shadow의 세 번째 필드값이 0으로 설정됨</td></tr>
 </table>
 
-![passwdS](https://github.com/dee021/TIL/blob/main/Linux/img/passwdS.png)
+![passwdS](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/passwdS.png)
 
 > PS는 패스워드가 세팅되었다는 것을 의미하고 2023-08-04는 최근 패스워드 설정 혹은 변경일을 의미
 > 이후 순서대로 패스워드 변경 후 최소 보유일(may), 패스워드 최대 보유일(must), 패스워드 만기일 전 경고일, 패스워드 만기 후 계정이 불가능하게 되기 전 유효 기간을 의미
@@ -336,7 +336,7 @@ w [option] [user]
 <tr><td>-s</td><td>LOGIN@, JCPU, PCPU를 제외하고 간략히 출력</td></tr>
 </table>
 
-![w](https://github.com/dee021/TIL/blob/main/Linux/img/w.png)
+![w](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/w.png)
 
 <table>
 <thead><td>항목</td><td>의미</td></thead>
