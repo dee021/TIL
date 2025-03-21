@@ -49,7 +49,7 @@ echo $SHELL
 - 'chsh -l' 명령 실행
 - /etc/shells 파일 확인
   
-![shells](https://github.com/dee021/TIL/blob/main/Linux/img/checkShell.png)
+![shells](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/checkShell.png)
 
 <b>셸 변경</b>
 
@@ -163,7 +163,7 @@ alias 해제
 - 특정 명령의 결과를 다른 명령어의 인자값으로 사용하는 것
 - \` `(Backquotes)나 $( )를 이용하여 대체 가능
 
-![commandSubstitution](https://github.com/dee021/TIL/blob/main/Linux/img/commandSubstitution.png)
+![commandSubstitution](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/commandSubstitution.png)
 
 6. 그룹 명령 실행
 - 하나의 명령 행에 여러 개의 명령어를 동시에 사용할 수 있음
@@ -210,7 +210,7 @@ echo a.txt | xargs ls -l
 a.txt의 ls -l 결과를 출력
 ```
 
-![xargs](https://github.com/dee021/TIL/blob/main/Linux/img/xargs.png)
+![xargs](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/xargs.png)
 
 10. 작업 제어 기능
 - 작업을 백그라운드와 포그라운드에서 실행할 수 있으며, 이 작업을 서로 전환하여 실행할 수 있음
