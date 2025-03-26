@@ -683,3 +683,66 @@ nslookup [option] Hostname_or_IPAddress
 ![nslookup](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/nslookup.png)
 
 > `nslookup` 명령만 입력하면 대화형 모드로 접속
+
+
+#### dig
+- 도메인명으로 정보를 조회하는 명령
+
+```
+dig [option] 도메인명 [type]
+```
+
+주요 옵션
+<table>
+<tr><td>-t</td><td>질의 타입을 지정하는 옵션<br>MX, NS 등을 지정하여 조회할 수 있으며 기본값은 IP를 조회하는 A(대소문자 구분하지 않음)</td></tr>
+</table>
+
+
+#### host
+- 도메인명으로 정보를 조회하는 명령
+
+```
+host [option] 도메인명
+```
+
+주요 옵션
+<table>
+<tr><td>-t</td><td>질의 타입을 지정하는 옵션<br>MX, NS 등을 지정하여 조회할 수 있으며 기본값은 IP를 조회하는 A(대소문자 구분하지 않음)</td></tr>
+<tr><td>-v</td><td>지정한 도메인에 대한 자세한 정보 출력</td></tr>
+<tr><td>-a</td><td>-v와 같으나 MX, NS 등의 타입값 위주로 출력</td></tr>
+</table>
+
+#### hostname
+- 시스템에 설정된 호스트네임을 출력하거나 설정
+
+```
+hostname [option] [hostname]
+```
+
+<table>
+<tr><td>-v</td><td>자세한 호스트명 정보 출력</td></tr>
+<tr><td>-d</td><td>도메인명만 출력</td></tr>
+<tr><td>-f</td><td>완전한 호스트명(FQDN) 출력</td></tr>
+<tr><td>-a</td><td>호스트명에 대한 Alias명 출력</td></tr>
+<tr><td>-i</td><td>호스트명에 설정된 IP 주소 출력</td></tr>
+</table>
+
+
+## 네트워크 관련 디렉터리
+
+/etc/sysconfig/network-scripts : 네트워크 인터페이스 환경 설정관 관련된 파일 및 스크립트가 저장되는 곳
+
+![networkSripts](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/network_scripts.png)
+
+> 보통 네트워크 인터페이스 파일은 `ifcfg-네트워크장치명`으로 생성되어 관련 내용이 저장됨
+
+네트워크 관련 파일
+<table>
+<tr><td>/etc/resolv.conf</td><td>시스템에서 사용하는 네임 서버(DNS 서버)를 설정하는 파일
+
+- CentOS 7 버전부터는 /etc/sysconfig/network-scripts 하위에서 지정
+</td></tr>
+<tr><td>/etc/hosts</td><td>IP 주소와 호스트명을 매핑시켜 데이터베이스처럼 사용하는 파일<br>자주 이용하는 IP 주소에 별칭을 설정하여 접속을 쉽게 하거나 로컬 시스템에 가상 도메인을 부여할 수 있음</td></tr>
+</table>
+
+
