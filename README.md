@@ -1,4 +1,3 @@
-# TIL - Today I Learned
 
 - [운영체제와 리눅스](https://github.com/dee021/TIL/blob/linuxmaster/Linux/OS_and_Linux.md)
 - [리눅스와 하드웨어](https://github.com/dee021/TIL/blob/linuxmaster/Linux/Linux_and_Hardware.md)
