@@ -9,4 +9,5 @@
 - [네트워크](https://github.com/dee021/TIL/blob/linuxmaster/Linux/network.md)
 - [사용자 관리](https://github.com/dee021/TIL/blob/linuxmaster/Linux/user.md)
 - [소프트웨어 설치 및 관리](https://github.com/dee021/TIL/blob/linuxmaster/Linux/Software.md)
+- [장치관리](https://github.com/dee021/TIL/blob/linuxmaster/Linux/manage_device.md)
 
