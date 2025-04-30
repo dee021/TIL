@@ -190,7 +190,7 @@ db.collection_name.aggregate(stage1[, stage2, ...])
 - 파이프라인에 $merge 혹은 $out 스테이지가 포함되지 않는 한 컬렉션의 도큐먼트를 수정하지 않음
   - $out : 기존 컬렉션이 있으면 덮어쓰며, 샤딩된 컬렉션에는 쓸 수 없음
   - $merge : 샤딩 여부에 관계없이 모든 데이터베이스와 컬렉션에 쓸 수 있음
-- $bucket, $bucketAuto, $group 스테이지에서 `$accumulator` 사용 가능
+- $bucket, $bucketAuto, $group 스테이지에서 `accumulator` 사용 가능
 
 
 예
@@ -310,7 +310,7 @@ db.collection_name.aggregate(stage1[, stage2, ...])
     <field1>: {<accumulator1>: <expression1>}, ...} }
 ```
 - <_id> : 그룹화 키 지정
-- < field> : (optional) $accumulator 를 사용하여 계산
+- < field> : (optional) accumulator 를 사용하여 계산
   - $first, $last, $min, $max, $avg, $sum, $push, $addToSet 등
   - 생략 시 그룹화 키의 종류만 확인하는 결과
 
@@ -576,6 +576,7 @@ db.collection_name.aggregate(stage1[, stage2, ...])
 ### 집계 파이프라인 연산자
 
 - 일부 집계 파이프라인 스테이지에서는 표현식을 허용
+    - 예: $project, $addFields, $group
 
 형식 : 피연산자가 들어있는 배열을 인수로 받음
 ```
@@ -945,7 +946,7 @@ $switch: {
   - 해당 값이 음의 정수인 경우 : 배열의 끝 요소부터 시작하여 위치에 있는 요소를 반환
   - idx가 배열 경계를 초과하는 경우 : null 반환
 
-<b>slice</b>
+<b>$slice</b>
 
 - 배열의 부분 집합을 반환
 
@@ -1045,4 +1046,26 @@ $switch: {
 ```
 </td></tr>
 </tbody>
+</table>
+
+#### accumulator expression
+
+누산기 연산자
+
+- $bucket, $bucketAuto, $group 스테이지에서 사용 가능
+  - MongoDB 5.0부터 $setWindowFields 포함
+- 집계 파이프라인을 진행하는 동안 상태를 유지
+  - 각 도큐먼트에 대한 연산이 아닌, 컬렉션 단위의 연산이 가능
+
+<table>
+<thead><td>연산자</td><td>설명</td></thead>
+<tr><td>$accumulator</td><td>사용자 정의 누산기 함수 결과를 반환</td></tr>
+<tr><td>$addToSet</td><td>각 그룹에 대한 고유한 원소로 이루어진 배열을 반환<br>배열 요소의 순서는 지정되지 않음</td></tr>
+<tr><td>$avg</td><td>숫자 값의 평균을 반환<br>숫자가 아닌 값은 무시됨</td></tr>
+<tr><td>$sum</td><td>숫자 값의 합을 반환<br>숫자가 아닌 값은 무시됨</td></tr>
+<tr><td>$first</td><td>그룹의 첫 번째 도큐먼트에 대한 표현식 결과를 반환<br>정렬된 컬렉션에 대해 의미를 가지며, null이 반환될 수 있음</td></tr>
+<tr><td>$last</td><td>그룹의 마지막 도큐먼트에 대한 표현식 결과를 반환<br>정렬된 컬렉션에 대해 의미를 가지며, null이 반환될 수 있음</td></tr>
+<tr><td>$max</td><td>각 그룹별 가장 높은 표현식 값을 반환<br>값과 데이터 유형 모두 비교</td></tr>
+<tr><td>$min</td><td>각 그룹별 가장 낮은 표현식 값을 반환<br>값과 데이터 유형 모두 비교</td></tr>
+<tr><td>$push</td><td>각 그룹 내 도큐먼트에 대한 표현식 값을 담은 배열을 반환<br>파이프파인으로 들어오는 순서에 따라 배열 원소의 순서가 정해짐<br></td></tr>
 </table>
