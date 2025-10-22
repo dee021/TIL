@@ -1,7 +1,11 @@
 # TIL - Today I Learned
 
 ## DB
-MongoDB
+### SQL
+- [서브 쿼리](https://github.com/dee021/TIL/blob/main/DB/SQL/Subquery.md)
+- [그룹 함수](https://github.com/dee021/TIL/blob/main/DB/SQL/GroupFunction.md)
+### NoSQL
+#### MongoDB
 - [MongoDB 시작하기](https://github.com/dee021/TIL/blob/main/MongoDB/01_Start_to_Mongo.md)
 - [컬렉션](https://github.com/dee021/TIL/blob/main/MongoDB/02_Collection.md)
 - [CRUD](https://github.com/dee021/TIL/blob/main/MongoDB/03_Document_DRUD.md)
