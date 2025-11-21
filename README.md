@@ -16,6 +16,12 @@
 - [인덱스](https://github.com/dee021/TIL/blob/main/MongoDB/05_Index.md)
 - [집계](https://github.com/dee021/TIL/blob/main/MongoDB/06_aggregate.md)
 
+<hr>
+
+## ETC
+- [CSRF(Cross-Site Request Forgery)](https://github.com/dee021/TIL/blob/main/Security/CSRF.md)
+
+<hr>
 
 자격 공부
 - [리눅스마스터](https://github.com/dee021/TIL/tree/linuxmaster)
