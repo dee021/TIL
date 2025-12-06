@@ -8,6 +8,7 @@
 <!-- - [TOP N 쿼리]() -->
 - [계층형 질의](/DB/SQL/Hierarchial_Query.md)
 - [PIVOT과 UNPIVOT](/DB/SQL/Pivot_and_Unpivot.md)
+- [데이터베이스 구조](/DB/SQL/databaseArchitecture.md)
 ### NoSQL
 #### MongoDB
 - [MongoDB 시작하기](https://github.com/dee021/TIL/blob/main/MongoDB/01_Start_to_Mongo.md)
