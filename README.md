@@ -10,6 +10,7 @@
 - [PIVOT과 UNPIVOT](/DB/SQL/Pivot_and_Unpivot.md)
 - [데이터베이스 구조](/DB/SQL/databaseArchitecture.md)
 - [BCHR](/DB/SQL/BCHR.md)
+- [인덱스 스캔](/DB/SQL/IndexScan.md)
 ### NoSQL
 #### MongoDB
 - [MongoDB 시작하기](https://github.com/dee021/TIL/blob/main/MongoDB/01_Start_to_Mongo.md)
