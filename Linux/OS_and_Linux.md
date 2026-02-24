@@ -29,11 +29,12 @@
 - 강력한 네트워크 지원
 - 편리한 사용자 인터페이스 제공
 - 계층적 파일 시스템 운영
-- 가상 메모리 지원
+- 가상 메모리 지원 : 물리적 RAM이 부족할 때 SSD나 하드 드라이브의 일부를 임시 메모리로 사용하는 기능
 - 고성능의 프로세서에 최적화
 - 개방형 운영체제화
 - 뛰어난 이식성 지원
-- 가상화 기술 지원
+- 가상화 기술 지원 : 소프트웨어를 이용해 물리적 하드웨어를 추상화하여, 단일 물리적 리소스를 여러 개의 논리적 리소스로 분할하거나, 여러 리소스를 하나로 합쳐 사용하는 기술
+
 
 운영체제의 역사
 <table>
@@ -95,7 +96,7 @@
 - 리눅스 기반 / Chrome OS
 
 ## 리눅스 기초
-<b>관련 용어</b>
+<b>관련 용어</b><br>
 GNU(GNU's Not Unix)
 - 유닉스와 호환이 되면서 더 강력한 운영체제를 만들고자 하는 프로젝트
 - 리처드 스톨먼을 주축으로 유닉스를 모태로 개발을 시작
@@ -159,6 +160,8 @@ MIT(Massachusetts Institue of Technology) 라이선스
 <tr><td>MIT</td><td>비공개 가능</td><td>가능</td></tr>
 </table>
 
+<hr>
+
 ### 리눅스 배포판
 패키지 관리 기법에 따라 크게 슬랙웨어, 데비안, 레드햇 3종류로 분류
 
@@ -201,7 +204,7 @@ MIT(Massachusetts Institue of Technology) 라이선스
 5. 뛰어난 이식성
    - 리눅스는 약간의 어셈블리와 대부분의 C언어로 작성
 6. 유연성과 확장성
-   - 리눅스에서 설계하고 만들어진 프로그램은 이식이 수비고 자유로운 배포가 가능
+   - 리눅스에서 설계하고 만들어진 프로그램은 이식이 쉽고 자유로운 배포가 가능
    - 커널 소스가 공개되어 있어 다양한 채널을 통해 다양한 하드웨어 관련 지원을 받을 수 있음
 7. 뛰어난 안정성과 보안성
 8. 우수한 가격대 성능비
@@ -250,20 +253,24 @@ MIT(Massachusetts Institue of Technology) 라이선스
 - 클라우드 컴퓨팅
 - 빅데이터
 - 사물인터넷
+
 #### 리눅스 클러스터링(Clustering)
+
+> Cluster : 무리. 리눅스에서 여러 대의 시스템을 연결하여 하나의 그룹으로 구성된 시스템을 의미.
+
 1. 고계산용 클러스터(HPC; High Performance Computing Cluster)
-   
 ![HPC](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/HPC.jpg)
    - 고성능의 계산 능력을 제공하기 위한 목적
    - 슈퍼컴퓨터 구성에 주로 사용
-2. 부하분산 클러스터(LVS; Linux Virtual Server Cluster)
+  
 
+2. 부하분산 클러스터(LVS; Linux Virtual Server Cluster)
 ![LVS](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/LVS.jpg)
    - 대규모의 서비스를 제공하기 위한 목적
    - 웹 서버를 비롯한 서버 분야에서 주로 사용
    - 보통 여러 대의 리얼 서버에 부하를 분산해주는 로드 밸런서를 두고 운영하는 방법
-3. 고가용성 클러스터(HA; High Availability Cluster)
 
+3. 고가용성 클러스터(HA; High Availability Cluster)
 ![HA](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/HA.jpg)
    - 지속적인 서비스 제공을 목적
    - LVS와 함께 연동하여 많이 사용
