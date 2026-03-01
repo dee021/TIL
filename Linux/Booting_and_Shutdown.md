@@ -6,6 +6,7 @@
 4. 부트 매니저 프로그램은 관련 환경 설정 파일을 참고하여 운영체제 부팅을 시작한다.
 
  > MBR(Master Boot Record) : 디스크의 첫 번째 섹터에 해당하며 512byte. 부트 매니저 프로그램과 파티션 정보가 기록됨.
+
 ### 부트 매니저(Boot Manager)
 - 부팅을 도와주는 역할을 하는 프로그램
 - 하드 디스크의 맨 앞쪽 영역 MBR에 설치됨
@@ -19,9 +20,10 @@
 ![grub_file](https://github.com/dee021/TIL/blob/linuxmaster/Linux/img/grub.png)
 - GRUB_TIMEOUT=5 : GRUB 부트 화면에서 대기하는 시간(s)
 - GRUB_DEFAULT=saved : 부팅할 모드를 선택하는 항목
-  - 0 ~ N : 부트 화면에 제시된 목록 중 i+1번째 항목으로 부팅 
+  - 0 ~ N : 부트 화면에 제시된 목록 중 i+1번째 항목으로 부팅
+    - GRUB_DEFAULT=1 : 메뉴 선택 없을 시 2번째 항목의 운영체제로 부팅 
   - saved : 기본 메뉴 목록이 'GRUB_SAFEDEFAULT' 또는 'grub-set-default'에 의해 저장됨
-> GRUB_DEFAULT=1 : 메뉴 선택 없을 시 2번째 항목의 운영체제로 부팅
+    
 - root 패스워드 분실 시 응급 복구 모드로 부팅하여 패스워드 재설정
   1) GRUB 부트 메뉴 화면에서 [e]를 눌러 편집 상태로 진입
   2) 커널 인자값 'ro rhgb quite LANG=ko_KR.UTF-8'를 지우고 'rw init=/bin/sh' 입력
@@ -34,6 +36,8 @@ grub2-mkconfig [-o 파일명]
 ```
 - GRUB 환경 설정 파일을 생성하는 명령
 - -o : GRUB의 환경 설정 파일을 생성할 때 지정(--output=파일명)
+
+<hr>
 
 ### systemd(System and Service Manager)
 CentOS 7 부터 사용되는 시스템 부팅 및 서비스를 관리해주는 프로그램
@@ -211,6 +215,8 @@ hostnamectl [command] [설정값]
 command 입력이 없을 경우 기본값</td></tr>
 <tr><td>set-hostname</td><td>호스트명을 설정할 때 사용</td></tr>
 </table>
+
+<hr>
 
 ## 셧다운(Shutdown)
 셧다운 관련 명령<br>
