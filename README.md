@@ -1,5 +1,9 @@
 # TIL - Today I Learned
 
+## Algorithm
+#### PST
+- [프림 알고리즘](/Algorithm/PrimAlgorithm.md)
+
 ## DB
 ### SQL
 - [서브 쿼리](/DB/SQL/Subquery.md)
